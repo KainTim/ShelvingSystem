@@ -31,7 +31,7 @@ namespace ShelvingSystem
                     }
                     else
                     {
-                        Console.Write($"| {goods[row, column]} ");
+                        Console.Write($"| {goods[row, column].Kurzzeichen()} ");
                     }
                 }
                 Console.WriteLine("|");
@@ -44,7 +44,7 @@ namespace ShelvingSystem
         }
         public double Utilization()
         {
-            return GetFullSpaces() / GetAmountOfSpaces();
+            return (double)GetFullSpaces() / (double)GetAmountOfSpaces()*100;
         }
         public Good? DeliverGood(int row, int column)
         {

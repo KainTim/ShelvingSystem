@@ -17,12 +17,12 @@ namespace ShelvingSystem
 
         public override string Description()
         {
-            return "W";
+            return $"#{Id} Werkzeug {Weight} kg"; 
         }
 
         public override string Kurzzeichen()
         {
-            return $"#{Id} Werkzeug {Weight} kg";
+            return "W";
         }
     }
 }
