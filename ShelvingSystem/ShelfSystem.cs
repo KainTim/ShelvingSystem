@@ -13,6 +13,7 @@ namespace ShelvingSystem
             Shelf shelf = new Shelf(5, 10);
             
             shelf.Show();
+            Console.WriteLine("Utilization: {0:0.##}%",shelf.Utilization());
         }
     }
 }
