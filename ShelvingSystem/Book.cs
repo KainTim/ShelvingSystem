@@ -22,7 +22,7 @@ namespace ShelvingSystem
 
         public override string Description()
         {
-            return $"#{id}: Book {Width}x{Height}x{Length}";
+            return $"#{Id}: Book {Width}x{Height}x{Length}";
         }
 
         public override string Kurzzeichen()

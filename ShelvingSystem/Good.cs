@@ -8,8 +8,8 @@ namespace ShelvingSystem
 {
     internal abstract class Good
     {
-        protected int id {  get; set; }
-        public Good(int id) => this.id = id;
+        protected int Id {  get; set; }
+        public Good(int id) => this.Id = id;
         public abstract String Description();
         public abstract String Kurzzeichen();
     }
