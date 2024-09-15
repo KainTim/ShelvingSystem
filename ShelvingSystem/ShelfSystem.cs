@@ -21,6 +21,32 @@ namespace ShelvingSystem
             shelf.StoreGood(1, 2, new Tool(5, 12.5));
             shelf.Show();
             Console.WriteLine("Utilization: {0:0.##}%",shelf.Utilization());
+
+            Console.WriteLine("\n\nTest Method: ");
+            TestCsv();
+        }
+        public static void TestCsv()
+        {
+            Shelf shelf = new Shelf(6, 5);
+
+            string[] lines = File.ReadAllLines("105a_waren.csv");
+            for (int i = 0; i < lines.GetLength(0); i++)
+            {
+                string[] parts = lines[i].Split(";");
+                if (parts[0].Equals("Werkzeug"))
+                {
+                    shelf.StoreGood(int.Parse(parts[1]), int.Parse(parts[2]),
+                        new Tool(int.Parse(parts[3]), double.Parse(parts[4])));
+                }
+                else
+                {
+                    shelf.StoreGood(int.Parse(parts[1]), int.Parse(parts[2]),
+                        new Book(int.Parse(parts[3]), int.Parse(parts[4]),
+                        int.Parse(parts[5]), int.Parse(parts[6])));
+                }
+            }
+            shelf.Show();
+            Console.WriteLine("Utilization: {0:0.##}%", shelf.Utilization());
         }
     }
 }
