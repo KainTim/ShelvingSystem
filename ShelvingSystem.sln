@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35303.130
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShelvingSystem", "ShelvingSystem\ShelvingSystem.csproj", "{F4134AAB-AAAB-4544-8354-331F3AAB49EC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F4134AAB-AAAB-4544-8354-331F3AAB49EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4134AAB-AAAB-4544-8354-331F3AAB49EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4134AAB-AAAB-4544-8354-331F3AAB49EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4134AAB-AAAB-4544-8354-331F3AAB49EC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CE3D6890-EA9C-47EC-B88C-F2B0272423FC}
+	EndGlobalSection
+EndGlobal
